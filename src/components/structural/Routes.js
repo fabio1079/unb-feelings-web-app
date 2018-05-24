@@ -21,7 +21,7 @@ const Routes = ({ user }) => (
       component={UniversityPost}
       user={user}
     />
-    <PrivateRoute
+    <Route
       path="/feelings"
       component={FeelingsContainer}
       user={user}
