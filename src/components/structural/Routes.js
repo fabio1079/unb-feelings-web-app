@@ -10,6 +10,7 @@ import SignUpContainer from '../pages/sign-up/SignUpContainer';
 // Private routes
 import FeelingsContainer from '../pages/feelings/FeelingsContainer';
 import UniversityPost from '../pages/university_post/UniversityPost';
+import ChartsContainer from '../pages/charts/Charts';
 
 const Routes = ({ user }) => (
   <React.Fragment>
@@ -23,6 +24,11 @@ const Routes = ({ user }) => (
     <PrivateRoute
       path="/feelings"
       component={FeelingsContainer}
+      user={user}
+    />
+    <Route
+      path="/charts"
+      component={ChartsContainer}
       user={user}
     />
   </React.Fragment>
